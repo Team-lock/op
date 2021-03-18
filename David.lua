@@ -74,7 +74,7 @@ https.request("https://apiabs.ml/config.php?Get=David&DevId="..DevAbs:get(Server
 file = io.open("David.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
-cd $HOME/David
+cd $HOME/DavidTeam
 token="]]..DevAbs:get(ServerDavid.."TokenDavid")..[["
 while(true) do
 rm -fr ../.telegram-cli
@@ -97,7 +97,7 @@ file:close()
 file = io.open("Run", "w")  
 file:write([[
 #!/usr/bin/env bash
-cd $HOME/David
+cd $HOME/DavidTeam
 while(true) do
 rm -fr ../.telegram-cli
 screen -S David -X kill
@@ -9274,7 +9274,7 @@ Create(Config, "./config.lua")
 file = io.open("David.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
-cd $HOME/David
+cd $HOME/DavidTeam
 token="]]..TokenBot..[["
 while(true) do
 rm -fr ../.telegram-cli
@@ -9297,7 +9297,7 @@ file:close()
 file = io.open("Run", "w")  
 file:write([[
 #!/usr/bin/env bash
-cd $HOME/David
+cd $HOME/DavidTeam
 while(true) do
 rm -fr ../.telegram-cli
 screen -S David -X kill
